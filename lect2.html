@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Elements + Lecture 2</title>
+
+    <style>
+        body {
+        margin: 0;
+        font-family: Georgia, serif;
+        background-color: #dfe4ea;
+        color: #2f2f2f;
+        }
+
+        header {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #cfd6df;
+        border-bottom: 1px solid #b5bcc6;
+        }
+
+        .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+        }
+
+        section {
+        background-color: #f7f8fa;
+        padding: 30px;
+        margin-bottom: 40px;
+        border-radius: 12px;
+        border: 1px solid #b5bcc6;
+        }
+
+        section h2 {
+        margin-top: 0;
+        }
+
+        .desc {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #555;
+        }
+
+        hr {
+        margin: 25px 0;
+        border: none;
+        border-top: 1px solid #ccc;
+        }
+
+        .backBtn {
+			position: fixed;
+			top: 20px;
+			left: 20px;
+
+			padding: 10px 14px;
+			background: #cfd6df;
+			border: 1px solid #b5bcc6;
+
+			text-decoration: none;
+			color: #2f2f2f;
+
+			border-radius: 8px;
+			font-size: 14px;
+
+			box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+			transition: 0.2s ease;
+		}
+
+		.backBtn:hover {
+			background: #bfc7d1;
+		}
+        .sampDiv {
+            text-align: center;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 40px;
+        }
+        h2 {
+            color: rgb(24, 24, 163);
+            font-size: 40px;
+        }
+        h3 {
+            color: rgb(43, 43, 126);
+            font-size: 40px;
+        }
+        p{
+            color:red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="backBtn">← Back</a>
+
+    <header>
+    <h1>HTML Learning Page</h1>
+    <p class="desc">Combined lecture notes and HTML element samples</p>
+    </header>
+
+    <div class="container">
+
+    <section>
+
+    <div class = "sampDiv">
+        <hr align = "left" width = "40%" size = 2 color = "red">
+            <h1>HTML Elements</h1>
+            <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element</p>
+        <hr align = "right" width = "60%" size = 2 color = "red">
+    </div>
+
+    <h2>First Sample</h2>
+    <p>These are basic HTML tags used for displaying computer-related text formats.</p>
+    <code>sample for computer code</code><br>
+    <kbd>standing keyboard</kbd><br>
+    <samp>sample output</samp><br>
+
+    <h2>Display Underlined Text</h2>
+    <p>These tags show emphasized or inserted text.</p>
+    <u>sample for underlined text</u> <br>
+    <ins>sample for inserted text</ins>
+
+    <h2>Use non breaking space entiy to add spaces</h2>
+    <p>This shows manual spacing using HTML entities.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This paragraph starts with an indent.</p>
+
+    <h2>Some Common HTML Entities</h2>
+    <p>Entities are used for special symbols in HTML.</p>
+    <p> &copy Dapanas :)</p>
+    <p>"Hello World"</p>
+    <p>&reg Yey</p>
+
+    <h2>Use blockquote for quoted content</h2>
+    <p>This tag is used for long quoted text or stories.</p>
+    <p><blockquote align = "justify"> 
+        It's a Saturday night, she doesn't have to go to set today, she doesn't have to be flying somewhere, much less be seen in public and mistaken for some celebrity. 
+        She had decided to spend her free day at the pool and not exactly swimming. She's using her skateboard there, it had been quite a while since she wore out the wheels. 
+        But she couldn't "risk" doing crazy stunts, her agent would kill her if she arrived on Monday with a broken arm. What good would a stunt double with her broken arm be? 
+        So she's been doing a few ollies, a few backslides and a madonna, and just now an Indy kickflip when she hears Enid laughing. She had a hard time landing that last trick,
+        because of that trivial distraction.
+        —Wedns you have to come see this.
+        She is still rolling around the pool, she turns to look at her friend, who is very comfortable on a lounge chair with her phone in hand. She deduces that it has
+        to be gossip, a very juicy one. Because that was Enid's daily training, although lately it was knowing who her fans were "shipping" her with.
+        —What is now? —Asks the skater, trying not to show any interest. What did it matter to her which man or woman the person she is in love with was paired with?
+        Wednesday does one last ollie out of the pool and takes off her helmet. Enid settles herself, sitting down, and pats the free space of the lounge chair to invite her
+        friend. —A thread on Twitter about the reasons why I'm secretly dating a woman. — Enid responded with a wolfish smile. —And it seems that that woman is you.
+        Wednesday freezes for a moment, not knowing how to react to that revelation. How could anyone have come to that conclusion? What evidence do you have? What consequences
+        will this have for Enid's career and her friendship with her? She feels a couple of dozen spiders walking across her body, then settling on her abdomen. Is that what 
+        they call nerves?
+    </blockquote></p>
+
+    <h3>Text Alignment Samples</h3>
+    <p align = "left"> To the left</p>
+    <p align = "right"> To the right</p>
+    <p align = "center"> HOORAY</p>
+
+    <h2>Sample of Preformatted Text</h2>
+    <h4>Vanish into you</h4>
+    <pre>
+    [Intro]
+    Saw your face and mine
+    In a picture by our bedside
+    It was cold in the summertime
+
+    [Verse 1]
+    High on a hill, you call
+    Two lovers regret their time
+    Once in a blue moon, I forget you
+    And once in your life, you'll be mine
+
+    [Pre-Chorus]
+    Do you see me? Do you see me now?
+    I've been waiting for you, cryin' out
+    Do you see me? Do you see me now?
+
+    [Chorus]
+    Saw your face and mine
+    In a picture by our bedside
+    It was cold in the summertime
+    We were happy just to be alive
+    Can I vanish into you?
+    Can I vanish into you? (Yah)
+
+    [Verse 2]
+    Into the night, we fly
+    Sirens blow by our heads (Yah)
+    See Lady Gaga Live
+    Get tickets as low as $127
+
+    You might also like
+    Shallow
+    Lady Gaga & Bradley Cooper
+    The Beast
+    Lady Gaga
+    Wood
+    Taylor Swift
+
+    [Pre-Chorus]
+    Do you see me? Do you see me now?
+    I've been waiting for you, cryin' out
+    Do you see me? Do you see me now?
+
+    [Chorus]
+    Saw your face and mine
+    In a picture by our bedside
+    It was cold in the summertime
+    We were happy just to be alive
+    Can I vanish into you?
+    Can I vanish into you?
+
+    [Instrumental Break]
+    (Yah)
+
+    [Chorus]
+    Saw your face and mine
+    In a picture by, by, by, by my bedside
+    It was cold in the summertime
+    We were happy just to be alive
+    Can I, I vanish into you?
+    Can I vanish into you? (Can I? Can I?)
+    Like a ghost, I, oh, oh-oh-oh-oh, vanish into you
+    Can I vanish into you?
+
+
+    [Outro]
+    When I die, can I vanish into you?
+    </pre>
+
+    <hr align = "left" width = "40%" size = 2 color = "black">
+    <h1 align = "center">Welcome to The Daily Planet</h1>
+    <hr align = "right" width = "60%" size = 2 color = "black">
+
+    <!-- LECTURE 2 CONTENT ADDED -->
+    <h2 style="color:#2f2f2f; font-size:30px;">Lecture 2: HTML Structures</h2>
+    <p class="desc">This section explains the basic structure and concepts behind HTML pages.</p>
+
+    <p class="desc"><strong>HTML</strong> is used to structure web content like text, images, and links.</p>
+    <p class="desc">A webpage usually starts with <code>&lt;!DOCTYPE html&gt;</code> and is divided into head and body sections.</p>
+
+    <p class="desc"><strong>Elements</strong> are the building blocks of a webpage, while <strong>tags</strong> define them.</p>
+    <p class="desc"><strong>Attributes</strong> give extra information to elements like alignment, color, or behavior.</p>
+
+    <p class="desc"><strong>Semantic tags</strong> like header, section, and footer help organize content clearly.</p>
+
+    <p class="desc">HTML entities are used for special characters like &lt;, &gt;, and &amp;.</p>
+
+    </section>
+
+    </div>
+
+</body>
+</html>

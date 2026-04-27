@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Midterm Activity 3</title>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 40px;
+                line-height: 1.6;
+                background-color: pink;
+            }
+
+            h1 {
+                text-align: center;
+                color: #000000;
+                font-family: sans-serif;
+                font-weight: bold;
+            }
+
+            h2 {
+                font-family: sans-serif;
+                color: rgb(37, 11, 115);
+            }
+
+            img {
+                margin: 15px 0;
+                display: block;
+            }
+
+            .border-img {
+                border: 2px solid black;
+            }
+
+            .rounded-img {
+                border-radius: 20px;
+            }
+
+            .partial-round {
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+
+            .float-img {
+                float: left;
+                margin: 10px;
+            }
+
+            .float-img2 {
+                float: right;
+                margin: 10px;
+            }
+
+            .section {
+                background: white;
+                padding: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+
+            .paragraph {
+                margin-top: 20px;
+                font-size: 30px;
+                color: #333;
+            }
+
+            .hover-img {
+                transition: 0.3s;
+            }
+        
+            .hover-img:hover {
+                transform: scale(1.1);
+            }
+
+            .shadow-img {
+                box-shadow: 5px 5px 10px gray;
+            }
+
+            .shape-img {
+                float: left;
+                shape-outside: circle();
+                clip-path: circle();
+                width: 300px;
+                height: 200px;
+                margin: 10px;
+            }
+
+            .shape2-img {
+                float: left;
+                shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                width: 300px;
+                height: 200px;
+                margin: 10px;
+            }
+
+            .mask-img {
+                width: 1000px;
+                height: 500px;
+
+                mask-image: url("names.png");
+                mask-size: contain;
+                mask-repeat: no-repeat;
+                mask-mode: luminance;
+
+                -webkit-mask-image: url("names.png");
+                -webkit-mask-size: contain;
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-mode: luminance;
+            }
+
+            .img_size {
+                width: 800px;
+                height: 500px;
+            }
+
+
+            .clear {
+                clear: both;
+            }
+            #topBtn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 15px;
+                border-radius: 50px;
+                background: #cfd6df;
+                border: 1px solid #b5bcc6;
+                text-decoration: none;
+                color: #2f2f2f;
+            }
+            .backBtn {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+
+                padding: 10px 14px;
+                background: #cfd6df;
+                border: 1px solid #b5bcc6;
+
+                text-decoration: none;
+                color: #2f2f2f;
+
+                border-radius: 8px;
+                font-size: 14px;
+
+                box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+                transition: 0.2s ease;
+            }
+
+            .backBtn:hover {
+                background: #bfc7d1;
+            }
+            #topBtn{
+                position:fixed;
+                bottom:20px;
+                right:20px;
+                padding:12px 15px;
+                border-radius:50px;
+                background:#cfd6df;
+                border:1px solid #b5bcc6;
+                text-decoration:none;
+                color:#2f2f2f;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <a href="index.html" class="backBtn">← Back</a>
+        <h1>Midterm Lecture 6</h1>
+        <br>
+
+        <h2>1. Image with 2px Border and Alt Text</h2>
+        <img src="catnakashades.jpg" alt="This is a sample image description" class="border-img">
+        <br>
+
+        <h2>2. Image with Definite Size (5x5 inches)</h2>
+        <img src="vice2.jpg" width="500" height="500" alt="5x5 inch image">
+        <br>
+
+        <h2>3. Image with Rounded Borders</h2>
+        <img src="sage2.png" alt="Rounded border image" class="rounded-img">
+        <br>
+
+        <h2>4. Top Left and Lower Right Rounded Corners</h2>
+        <img src="dora.jpg" alt="Partially rounded image" class="partial-round img_size">
+        <br>
+
+        <h2>5. Clickable Image (Links to UE Website)</h2>
+        <a href="https://www.ue.edu.ph" target="_blank">
+            <img src="ue.png" alt="Click to visit UE website">
+        </a>
+        <br>
+
+        <h2>6. Image with Float Application</h2>
+
+        <img src="veewise.png" alt="Floating image" class="float-img">
+        <img src="aldub.jpg" alt="Floating image" class="float-img2">
+
+        <p class="paragraph">
+            This text wraps around the image because the image uses the float property.
+            The float used here are <strong>float: left;</strong> and <strong>float: right;</strong>
+        </p>
+        <br>
+        
+        <div class="clear"></div>
+        <h2>7. Image with Hover Effect</h2>
+        <img src="image1.jpg" class="hover-img img_size">
+        <br>
+
+        <h2>8. Image with Box Shadow</h2>
+        <img src="image2.jpg" class="shadow-img img_size">
+        <br>
+
+        <h2>9. Image with Shape-Outside (circle)</h2>
+        <img src="image3.jpg" class="shape-img">
+        <p>
+            This paragraph wraps around the circular image because shape-outside: circle() is applied.
+        </p>
+        <br>
+
+        <div class="clear"></div>
+        <h2>10. Image with Shape-Outside (triangle using polygon)</h2>
+        <img src="image4.jpg" class="shape2-img">
+        <p>
+            This paragraph wraps around a triangular shape using shape-outside: polygon().
+        </p>
+        <br>
+
+        <div class="clear"></div>
+        <h2>11. Image with Mask Image Property</h2>
+        <h3>This is the original image of our favorite place:</h3>
+        <img src="favorite_place.jpg" alt="Favorite Place" class="img_size">
+        <br>
+        <h3>This is what it looks like masked on our names:</h3>
+        <img src="favorite_place.jpg" class="mask-img">
+        <br> 
+
+        <h2 id="section12">12. Creating an Image Map</h2>
+        <h3>Click on one of the shapes to get a closer look:</h3>
+
+        <img src="Shapes.jpg" usemap="#image-map" alt="Shapes Image">
+
+        <map name="image-map">
+            <area shape="poly" coords="68,23,25,99,68,174,155,174,198,99,154,23" href="hexagon.html" alt="Hexagon Shape" target="_self">
+            <area shape="circle" coords="313,100,76" href="circle.html" alt="Circle Shape" target="_self">
+            <area shape="rect" coords="428,40,624,160" href="rectangle.html" alt="Rectangle Shape" target="_self">
+        </map>
+
+        <br> 
+
+        <h2>13. Creating an Image Map With Links Inside</h2>
+        <h3>Click on one of the shapes to get redirected:</h3>
+        
+        <img src="Shapes_Link.jpg" usemap="#image-map2" alt="Link Shapes Image">
+
+        <map name="image-map2">
+            <area shape="poly" coords="123,183,186,143,249,182,225,118,289,78,210,77,186,15,162,78,82,78,146,118" href="https://science.nasa.gov/universe/stars/" alt="Star Shape" target="_blank">
+            <area shape="poly" coords="470,18,375,101,471,186,566,101" href="https://www.reinersjewelry.com/blogs/news/16-things-you-didn-t-know-about-diamonds?srsltid=AfmBOopGMOIx6t192hBs-U6Sqx1_4vgx6RM2xUGAhCwq2RT3pUrGp4m1" alt="Diamond Shape" target="_blank">
+        </map>
+
+        <h3>Click on one of the sports ball to get redirected:</h3>
+        
+        <img src="Sports_Img.jpg" usemap="#image-map3" alt="Sports Ball Image">
+
+        <map name="image-map3">
+            <area shape="circle" coords="125,100,80" href="https://www.google.com/search?sca_esv=7a144a3578fe712f&sxsrf=ANbL-n70iVCBMtVJ8JEcrpZjovEYwJKzDg:1771675691240&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpmAsnXCN5UBx17opt8eaTX831KXQgHodZqPs0p66UIH5Va3aOJkrJUKF44c0lRi6MHRTIMr_dbs6GcapJlHOoRz7ZkCaRgH8QDBRTX_wZ8p5Yei9Pjc98xxFtyKehgoZZANdlq5QIOOyf_WirsA8wAiEfmMrQiDrKv2B5D8Xz-Z6ZFQyMEdi0bZsIS3gv3Cx469cBvg&q=basketball&sa=X&ved=2ahUKEwik7-6hxuqSAxV28DQHHbXrGGEQtKgLegQIFBAB&biw=1422&bih=791&dpr=1.35" alt="Basketball" target="_blank">
+            <area shape="circle" coords="326,100,80" href="https://www.google.com/search?q=tennis&sca_esv=7a144a3578fe712f&udm=2&biw=1422&bih=791&sxsrf=ANbL-n6LRE_bLNF5Ip_JMW1esddethOBdw%3A1771675697898&ei=MaCZafe-Novm2roPkY3roAQ&ved=0ahUKEwi3m4WlxuqSAxULs1YBHZHGGkQQ4dUDCBU&uact=5&oq=tennis&gs_lp=Egtnd3Mtd2l6LWltZyIGdGVubmlzMgcQIxgnGMkCMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFSIgKUKkDWJgJcAJ4AJABAJgBgQOgAbIIqgEHMC4xLjEuMrgBA8gBAPgBAZgCBqACygjCAgYQABgHGB7CAggQABiABBixA5gDAIgGAZIHBzIuMS4xLjKgB4scsgcHMC4xLjEuMrgHwgjCBwUwLjIuNMgHEoAIAA&sclient=gws-wiz-img" alt="Tennis Ball" target="_blank">
+            <area shape="circle" coords="525,100,80" href="https://www.google.com/search?q=soccer&sca_esv=7a144a3578fe712f&udm=2&biw=1422&bih=791&sxsrf=ANbL-n5TToKjiE4iV4tR9TgXUUJKRnYdiw%3A1771675731603&ei=U6CZadXEJMq40-kP6e_kqA0&ved=0ahUKEwiVuo61xuqSAxVK3DQHHek3GdUQ4dUDCBU&uact=5&oq=soccer&gs_lp=Egtnd3Mtd2l6LWltZyIGc29jY2VyMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgUQABiABDIFEAAYgAQyBRAAGIAESK4LUIQGWK8KcAJ4AJABAJgBwQGgAfYGqgEDMC41uAEDyAEA-AEBmAIHoAKPB8ICBxAjGCcYyQLCAgYQABgHGB7CAggQABiABBixA5gDAIgGAZIHAzIuNaAH1hyyBwMwLjW4B4cHwgcFMC4zLjTIBxOACAA&sclient=gws-wiz-img" alt="Soccer Ball" target="_blank">
+        </map>
+        <a href="#top" id="topBtn">↑ Top</a>
+    </body>
+</html>

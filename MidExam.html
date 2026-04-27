@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(MIDPIX/pixnio-4896x3264.jpg);
+        }
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 20px;
+            padding-right: 50px;
+            padding-left: 50px;
+            margin-left: 25%;
+        }
+        .Menu-name{
+            font-size: 80px;
+            text-align: center;
+            margin-top: 120px;
+        }
+        .main-dish{
+            list-style-type: none;
+            color: brown;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+            font-style: underline; 
+
+        }
+        h4{
+            margin-left: 20%;
+        }
+        .drinks{
+            list-style-type: none;
+            color: brown;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 40px;
+        }
+        .section-hr{
+            border: none;
+            border-top: 2px solid grey;
+            width: 10%;
+            margin-left: 20%;
+            margin-bottom: 20px;
+        }
+        .section-hr-drinks{
+            border: none;
+            border-top: 2px solid grey;
+            width: 10%;
+            margin-left: 59%;
+            margin-bottom: 20px;
+        }
+        .main-dish-item{
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            margin-left: 40px;
+        }
+        .main-dish-item img{
+            flex-shrink: 0;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20%;
+        }
+        .main-dish-content{
+            flex: 1;
+            margin-left: 17% ;
+        }
+        .drinks-images{
+            margin-left: 40px;
+            margin-bottom: 20px;
+
+        }
+        .drinks-images img{
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .drinks-item{
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            margin-left: 40px;
+
+        }
+        .drinks-item img{
+            flex-shrink: 0;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-left: 20%;
+        }
+        .drinks-content{
+            flex: 1;
+            margin-left: 20%;
+        }
+        .drinks-header{
+            margin-left: 59%;
+        }
+        .backBtn {
+			position: fixed;
+			top: 20px;
+			left: 20px;
+
+			padding: 10px 14px;
+			background: #cfd6df;
+			border: 1px solid #b5bcc6;
+
+			text-decoration: none;
+			color: #2f2f2f;
+
+			border-radius: 8px;
+			font-size: 14px;
+
+			box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+			transition: 0.2s ease;
+		}
+
+		.backBtn:hover {
+			background: #bfc7d1;
+		}
+    </style>
+</head>
+<body>
+    <a href="index.html" class="backBtn">← Back</a>
+    <div class="bgimg">
+        <table>
+        <tr>
+            <td>Dapanas, Nickhol Gabrielle A.</td>  
+            <td>BSIT 2nd Year - ITDD</td>
+            <td>03/09/2026</td>
+        </tr>
+    </table>
+
+    <h1 class="Menu-name">MENU</h1>
+
+    <h4>MAIN DISH</h4>
+    <hr class="section-hr">
+
+    <div class="main-dish-item">
+        <div class="main-dish-content">
+            <h4 style="margin-left: 0;">CHOCOLATE LAVA CAKE &nbsp;&nbsp;&nbsp;P 885.00</h4>
+            <ul class="main-dish">
+                <li>A warm chocolate cake</li>
+                <li>with a gooey molten</li>
+                <li>center, served with</li>
+                <li>vanilla ice cream</li>
+            </ul>
+        </div>
+        <img src="MIDPIX/pixnio-5760x3840 (8).jpg" alt="choco-lava-cake">
+    </div>
+
+    <div class="main-dish-item">
+        <div class="main-dish-content">
+            <h4 style="margin-left: 0;">Classic Tiramisu &nbsp;&nbsp;&nbsp; P 590.00</h4>
+            <ul class="main-dish">
+                <li>A warm chocolate cake</li>
+                <li>with a gooey molten</li>
+                <li>center, served with</li>
+                <li>vanilla ice cream</li>
+            </ul>
+        </div>
+        <img src="MIDPIX/pixnio-4329x2868.jpg" alt="Tiramisu">
+    </div>
+
+    <h4 class="drinks-header">DRINK</h4>
+    <hr class="section-hr-drinks">
+
+
+    <div class="drinks-item">
+        <img src="MIDPIX/pixnio-3840x5760 (3).jpg" alt="Cocktails">
+        <div class="drinks-content">
+            <h4 style="margin-left: 0;">COCKTAILS &nbsp;&nbsp;&nbsp;&nbsp; P 240.00</h4>
+            <ul class="drinks" style="margin-left: 0;">
+                <li>Winter Spiced Martini</li>
+                <li>with Cranberry and</li>
+                <li>Cinnamon</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="drinks-item">
+        <img src="MIDPIX/pixnio-3840x5760 (2).jpg" alt="Warm Drinks">
+        <div class="drinks-content">
+            <h4 style="margin-left: 0;">WARM DRINKS &nbsp;&nbsp;&nbsp;&nbsp; P 300.00</h4>
+            <ul class="drinks" style="margin-left: 0;">
+                <li>Mulled Wine with</li>
+                <li>Spices and Citrus</li>
+                <li>Fruits</li>
+            </ul>
+        </div>
+    </div>
+</body>
+<footer>
+    <hr>
+    <p align="center">Restaurant Inc. @ template.net</p>
+</footer> 
+    </div>
+</html>

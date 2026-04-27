@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3 CSS</title>
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <style>
+    h1{
+        color:blue;
+        font-size:28px;
+        text-align:center;
+    }
+
+    h3,h4,p{
+        text-align:left;
+        color:purple;
+    }
+
+    #para1{
+        color:blue;
+        text-align:right;
+    }
+
+    .center{
+        text-align:center;
+        color:green;
+    }
+
+    .backBtn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+
+        padding: 10px 14px;
+        background: #cfd6df;
+        border: 1px solid #b5bcc6;
+
+        text-decoration: none;
+        color: #2f2f2f;
+
+        border-radius: 8px;
+        font-size: 14px;
+
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+        transition: 0.2s ease;
+    }
+
+    .backBtn:hover {
+        background: #bfc7d1;
+    }
+    header p{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <a href="index.html" class="backBtn">← Back</a>
+    <header>
+        <h1>Lecture 3: CSS (Cascading Style Sheets)</h1>
+        <p>Introduction to CSS, selectors, syntax, and styling concepts.</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Introduction to CSS3</h2>
+            <p class="desc">
+            CSS (Cascading Style Sheets) is used to control the appearance of web pages.
+            It separates structure (HTML) from design (CSS) for better organization and maintainability.
+            </p>
+
+            <p class="desc">
+            CSS was developed by W3C to solve problems where HTML was being used for styling.
+            </p>
+
+            <hr>
+
+            <h2>Why CSS Was Created</h2>
+            <p class="desc">
+            Before CSS, HTML contained formatting tags like font and color which caused messy and repetitive code.
+            CSS fixed this by allowing styling rules to be written in one place.
+            </p>
+
+            <hr>
+
+            <h2>CSS Syntax</h2>
+            <p class="desc">
+            A CSS rule consists of a selector and a declaration block.
+            Each declaration contains a property and value.
+            </p>
+
+            <hr>
+
+            <h2>Element Selector Example</h2>
+            <p class="desc">
+            The element selector targets all elements of a specific type.
+            </p>
+
+            <h3>Sample Heading 3</h3>
+            <h4>Sample Heading 4</h4>
+            <p>This paragraph uses grouped selector styling.</p>
+            <p>One dollar and eighty-seven cents. That was all. And sixty cents of it was in pennies. Pennies saved one and two at a time by 
+                bulldozing the grocer and the vegetable man and the butcher until one's cheeks burned with the silent imputation of parsimony 
+                that such close dealing implied. Three times Della counted it. One dollar and eighty-seven cents. And the next day would be 
+                Christmas.There was clearly nothing left to do but flop down on the shabby little couch and howl. So Della did it. 
+                Which instigates the moral reflection that life is made up of sobs, sniffles, and smiles, with sniffles predominating. 
+                While the mistress of the home is gradually subsiding from the first stage to the second, take a look at the home. A furnished 
+                flat at $8 per week. It did not exactly beggar description, but it certainly had that word on the look-out for the mendicancy 
+                squad.
+            </p>
+
+            <hr>
+
+            <h2>ID Selector Example</h2>
+            <p class="desc">
+            The ID selector is used for a single unique element.
+            </p>
+
+            <p id="para1">
+            Without, the night was cold and wet, but in the small parlour of Laburnum Villa the blinds were drawn and the fire burned brightly. 
+            Father and son were at chess; the former, who possessed ideas about the game involving radical chances, putting his king into such sharp
+            and unnecessary perils that it even provoked comment from the white-haired old lady knitting placidly by the fire.
+            </p>
+
+            <hr>
+
+            <h2>Class Selector Example</h2>
+            <p class="desc">
+            The class selector can be reused for multiple elements.
+            </p>
+
+            <h2 class="center">Centered Class Example</h2>
+            <p class="center">
+                The girl was one of those pretty and charming young creatures who sometimes are born, as if by a slip of fate, into a family of 
+                clerks. She had no dowry, no expectations, no way of being known, understood, loved, married by any rich and distinguished man; 
+                so she let herself be married to a little clerk of the Ministry of Public Instruction. She dressed plainly because she could not 
+                dress well, but she was unhappy as if she had really fallen from a higher station; since with women there is neither caste nor rank,
+                for beauty, grace and charm take the place of family and birth. Natural ingenuity, instinct for what is elegant, a supple mind are 
+                their sole hierarchy, and often make of women of the people the equals of the very greatest ladies.
+            </p>
+            <hr>
+            <h2>Grouping Selector Example</h2>
+            <p class="desc">
+                Grouping selectors allow multiple elements to share the same style rules.
+            </p>
+
+            <h4>The Necklace</h4>
+            <p>
+                Mathilde suffered ceaselessly, feeling herself born to enjoy all delicacies and all luxuries. She was distressed at the poverty of her dwelling,
+                at the bareness of the walls, at the shabby chairs, the ugliness of the curtains. All those things, of which another woman of her rank would 
+                never even have been conscious, tortured her and made her angry. The sight of the little Breton peasant who did her humble housework aroused 
+                in her despairing regrets and bewildering dreams. She thought of silent antechambers hung with Oriental tapestry, illumined by tall bronze 
+                candelabra, and of two great footmen in knee breeches who sleep in the big armchairs, made drowsy by the oppressive heat of the stove. 
+                She thought of long reception halls hung with ancient silk, of the dainty cabinets containing priceless curiosities and of the little 
+                coquettish perfumed reception rooms made for chatting at five o'clock with intimate friends, with men famous and sought after, whom all 
+                women envy and whose attention they all desire.
+            </p>
+            <hr>
+            <h2>CSS Comments</h2>
+            <p class="desc">
+                Comments are used to explain code and are ignored by browsers.
+            </p>
+
+            <hr>
+
+            <h2>Inline CSS Example</h2>
+
+            <h1 style="color:rgb(0,0,255);">Color Sample</h1>
+            <h1 style="background-color:cornflowerblue;">Hello World</h1>
+            <h1 style="color:DarkGreen;">Hello World</h1>
+            <h1 style="border:2px solid DarkOrchid;">Hello World</h1>
+
+            <hr>
+
+            <h2>Cascading Order Concept</h2>
+            <p class="desc">
+            CSS follows priority rules where inline styles have the highest priority,
+            followed by internal and external styles.
+            </p>
+        </section>
+    </div>
+
+</body>
+</html>
