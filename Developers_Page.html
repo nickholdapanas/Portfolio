@@ -1,231 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developers Page</title>
-    <style>
-		/*.Name's para sa picture at name sa first part*/
-        .Name h1{
-            margin: 0;
-			font-weight: 1px;
-			letter-spacing: 1px;
-        }
-        .Name img{
-            border-radius: 50%;
-            width: 150px;
-			height: 150px;
-			object-fit: cover;
-        }
-		.Name p{
-			margin-top: 10px;
-			font-size: 14px;
-			color: #555;
-		}
-        body{
-			font-family: Georgia, serif, sans-serif;
-			margin: 0;
-			background-color: #dfe4ea;
-			color: #2f2f2f;
-        }
-		/*The pic and name is in this section*/
-		header{
-			text-align: center;
-			padding: 60px 20px;
-			background-color: #cfd6df;
-			border-bottom: 1 solid #b5bcc6;
-		}
-		.container{
-			max-width: 900px;
-			margin: 60px auto;
-			padding: 0 20px;
-		}
-		/*para sa section part, they are separated by background colors and hr so that you
-		can easily tell that they are their own part*/
-		section h2{
-			margin-top: 0;
-			font-weight: normal;
-			letter-spacing: 1px;
-			color: #333;
-		}
-		section{
-			background-color: #f7f8fa;
-			padding: 40px;
-			margin-bottom: 50px;
-		}
-		section p{
-			line-height: 1.8;
-			margin-bottom: 15px;
-		}
-		/*para sa lines*/
-		hr{
-			border: none;
-			border-top: 1px solid #808080;
-			margin: 60px 0;
-		}
-		/*to make the list bulleted and to not make it looked cramped*/
-		ul{
-			padding-left: 20px;
-			line-height: 1.8;
-		}
-		.backBtn {
-			position: fixed;
-			top: 20px;
-			left: 20px;
+  <meta charset="utf-8">
+  <title>Developer Overview</title>
 
-			padding: 10px 14px;
-			background: #cfd6df;
-			border: 1px solid #b5bcc6;
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #dfe4ea;
+      color: #2f2f2f;
+    }
 
-			text-decoration: none;
-			color: #2f2f2f;
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #cfd6df;
+      border-bottom: 1px solid #b5bcc6;
+    }
 
-			border-radius: 8px;
-			font-size: 14px;
+    .Name img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover; 
+    }
 
-			box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-			transition: 0.2s ease;
-		}
+    .Name h1 {
+      margin: 0;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
 
-		.backBtn:hover {
-			background: #bfc7d1;
-		}
-		#topBtn {
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			padding: 12px 15px;
-			border-radius: 50px;
-			background: #cfd6df;
-			border: 1px solid #b5bcc6;
-			text-decoration: none;
-			color: #2f2f2f;
-		}
-    </style>
+    .Name p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: #f7f8fa;
+      padding: 40px;
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-weight: normal;
+      letter-spacing: 1px;
+      color: #333;
+    }
+
+    section p {
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #c0c6cf;
+      margin: 60px 0;
+    }
+
+    .videos p{
+      margin: 0;
+    }
+
+
+  </style>
 </head>
+
 <body>
-	<a href="index.html" class="backBtn">← Back</a>
-	<header>
-	<div class = "Name">
-		<!--I uploaded the pic sa GitHub and linked it here so that no need to download the png that I used and
-		para iisang file lang for submission-->
-		<a href = "https://github.com/Nickhol366/pictures/blob/main/Avatar.png?raw=true">
-			<img id = "avatar" src="https://github.com/Nickhol366/pictures/blob/main/Avatar.png?raw=true" alt="My avatar">
-		</a>
-        <h1>Nickhol Gabrielle A. Dapanas</h1>
-		<p>A Second Year BSIT student from the University of The East</p>
+
+  <header>
+    <div class="Name">
+        <a href="avatar.html">
+            <img id="avatar" src="https://github.com/Nickhol366/pictures/blob/main/Avatar.png?raw=true" alt="My avatar">
+        </a>
+      <h1>Nickhol Gabrielle A. Dapanas</h1>
+      <p>A Second Year BSIT student from the University of the East</p>
     </div>
-	</header>
+  </header>
 
-	<!--My Main content, I used section to separate each part-->
-	<div class = "container">
-		<section>
-			<h2><strong>Introduction</strong></h2>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This page serves as a personal profile. It presents basic information about
-				who I am along with more detailed background for those who wants to read
-				more about me. The content here is straightforward and reflective, without trying
-				to present an idealized version of myself.
-			</p>
-		</section>
-		<hr>
-		<section>
-			<h2><strong>About Me</strong></h2>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am 19 years old and currently live in Tondo. I am a second-year BSIT student at the University 
-				of the East. I tend to keep to myself and focus on understanding who I am rather than projecting an image. I value independence 
-				and personal space, and I approach most things quietly and directly, preferring honesty over presentation.
-			</p>
-		</section>
+  <div class="container">
 
-		<hr>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        This page serves as a personal profile. It presents basic information about
+        who I am, along with a more detailed background for those who want to read
+        further. The content here is straightforward and reflective, without trying
+        to present an idealized version of myself.
+      </p>
+    </section>
 
-		<section>
-			<h2><strong>Biography</strong></h2>
-			<h3 align = "center"><strong>It's nothing but a fleeting memory</strong></h3>
-			<p><strong>Childhood Years</strong></p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Some would say that it was the happiest day of their lives 
-				while for some, it's nothing but a fleeting memory. While it is the happiest day for others, it's nothing but a distant memory now.
-				Back then, we didn't care about the world. We only cared about ourselves, about the toys that we played with,
-				and the joy that we spent with our friends. I don't remember much when I was a child but there is one thing that stuck out with me the most, 
-				that was when I got my first bicycle. I grew up with my grandmother back then because of my mothers work and when I finally got to meet her again I asked her to 
-				buy me a bicycle in which she did. 
-			</p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Now here's the problem, I grew up at my mother's province where everything were pretty much just pebbles and sand on the road,
-				there were no pavements or cement road to ride a bicycle on to. But I was just a child and I want nothing more than to have fun while I still can. That's why I rode 
-				it as fast as I can and ended up falling because the road was too bumpy to ride on. I still have my scar from that day but now it's pretty vague, most of my
-				childhood is either erased from my memory or it's just another fleeting memory. Still, that bicycle reminds me that even painful moments can become something worth remembering.
-			</p>
-			<p><strong>Teenage Years</strong></p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If my childhood is nothing but a fleeting memory then my teens is just a blank page, I only remember bits of pieces about my life.
-				During that year my mother took me back here in the city so that I can continue my studies and be finally with her after all this years. It was pretty scary back 
-				then, I don't know anyone here, all of my friends were back home and I was just here all by myself where the only person that I know in this place is my mom. My
-				mother, just told me on how to go to my new school without helping me with traveling there at all. 
-			</p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have to traverse the big city all by myself, it was scary at first
-				but I got used to it as time goes by. I joined the YMCA club when I was in 8th grade which is pretty fun, we went to a lot of schools and through that club I slowly learned how to socialize again.
-				Being around new people helped me feel less alone in a place that once felt unfamiliar.
-				Even though my memories are blurry, those moments taught me how to be independent.
-				Looking back now, my teenage years may be a blank page, but they quietly shaped who I am today.
-			</p>
-			<p><strong>College Years</strong></p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As for my college years, everything felt heavier but clearer at the same time. I was no 
-				longer just trying to survive each day, I was trying to figure out who I really was and what I wanted to become. 
-				College taught me that freedom comes with responsibility, and that every choice I make has consequences I have to face 
-				on my own. There were days when deadlines piled up and motivation was hard to find, but there were also moments when I 
-				felt proud just for making it through. I met people who came and went, some who stayed for a while, and some who taught me 
-				lessons without even realizing it. 
-			</p>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unlike my childhood and teenage years, college forced me to be present, even when I wanted 
-				to disappear. It wasnt always happy or exciting, but it was real. And maybe that is what makes my college years different they are 
-				not just memories fading away, theyre experiences that continue to shape me every day. Im still in the middle of this journey, learning from my mistakes as much as my small victories.
-				Unlike before, I cant just drift through things anymore because my choices now actually matter. I dont know exactly where 
-				Im headed yet, but I know that these years are slowly shaping me. For now, my college life isnt a conclusion it's still a work in progress.
-			</p>
-		</section>
+    <hr>
 
-		<hr>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a second year BSIT student from the University of the East. I tend to keep
+        things to myself and focus more on understanding who I am rather than
+        projecting an image.
+      </p>
+      <p>
+        I value independence, personal space, and self-reflection. I approach most
+        things quietly and directly, preferring honesty over presentation.
+      </p>
+    </section>
 
-		<section>
-			<h2><strong>My Current Skills</strong></h2>
-			<ul>
-				<li>Basic computer literacy</li>
-				<li>Basic problem solving</li>
-				<li>Independent learning</li>
-				<li>Basic SQL (simple queries and table structure)</li>
-			</ul>
-		</section>
-		
-		<hr>
-		
+    <hr>
 
-		<section>
-			<h2><strong>Hobbies and Interests</strong></h2>
-			<ul>
-				<li>Playing video games</li>
-				<li>Watching movies and TV series</li>
-				<li>Reading</li>
-				<li>Playing the guitar</li>
-			</ul>
-		</section>
+    <section>
+      <h2>Biography</h2>
 
-		<hr>
+      <p><strong>Childhood Years</strong></p>
+      <p>
+        Some would say that childhood is the happiest time of their lives, while for
+        others it becomes nothing more than a fleeting memory. Back then, we didn’t
+        care about the world only about ourselves, our toys, and the joy of being
+        with friends.
+      </p>
 
-		<section>
-			<h2><strong>Goals</strong></h2>
-			<p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My current goal is to continue learning new concepts and skills so that I can
-				eventually apply it in a professional setting. I want to build a solid foundation that will be useful once I 
-				enter the workforce.
-			</p>
-		</section>
-	</div>
-    <a href="#top" id="topBtn">↑ Top</a>
+      <p>
+        I don’t remember much from my childhood, but one memory stands out clearly:
+        getting my first bicycle. I grew up with my grandmother due to my mother’s
+        work, and when I finally reunited with her, I asked for a bicycle which
+        she gave me.
+      </p>
+
+      <p>
+        The roads where we lived were made of pebbles and sand. There were no proper
+        pavements, but I rode anyway. I fell, leaving a scar that has since faded.
+        Much like my memories, it’s still there just less visible.
+      </p>
+
+      <p><strong>Teenage Years</strong></p>
+      <p>
+        If my childhood is a fleeting memory, then my teenage years feel like a blank
+        page. I only remember fragments. Moving to the city forced me to learn
+        independence early.
+      </p>
+
+      <p>
+        Joining the YMCA club in eighth grade helped me reconnect with people and
+        slowly adapt. Even if much of that time feels blurred, it shaped how I handle
+        unfamiliar situations.
+      </p>
+
+      <p><strong>College Years</strong></p>
+      <p>
+        College feels heavier, but clearer. I’m no longer drifting every choice has
+        weight now. These years aren’t fading memories; they’re ongoing experiences.
+      </p>
+
+      <p>
+        I don’t know exactly where I’m headed yet, but I know my choices now matter.
+        My college life isn’t a conclusion it’s still a work in progress.
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Basic HTML5</li>
+        <li>Basic CSS3</li>
+        <li>Independent learning</li>
+        <li>Self-awareness</li>
+      </ul>
+    </section>
+     
+    <hr>
+
+    <section>
+      <h2>Hobbies and Interests</h2>
+      <ul>
+        <li>Playing mobile and rhythm games</li>
+        <li>Watching movies and TV series</li>
+        <li>Reading</li>
+        <li>Playing the guitar</li>
+      </ul>
+    </section>
+
+    <section>
+
+      <h2>My Top 5 Favorite Songs</h2>
+      <p>Lemon by Kenshi Yonezu</p>
+      <audio controls src="songs/米津玄師  Kenshi Yonezu  - Lemon.mp3" type="audio/mpeg"></audio>
+
+      <p>Easy</p>
+      <audio controls src="songs/Easy.mp3" type="audio/mpeg"></audio>
+
+      <p>Vanish Into You by Lazy Gaga</p>
+      <audio controls src="songs/Lady Gaga - Vanish Into You.mp3" type="audio/mpeg"> </audio>
+
+      <p>Sailor Song by Gigi Perez</p>
+      <audio controls src="songs/Gigi Perez - Sailor Song.mp3" type="audio/mpeg"></audio>
+
+      <p>Busy Woman by Sabrina Carpenter</p>
+      <audio controls src="songs/Busy Woman - Sabrina Carpenter.mp3" type="audio/mpeg"></audio>
+
+    </section>
+
+    <section class="videos">
+      <h2>My Favorite Movies/Series</h2>
+      
+      <p>Wednesday Season 2</p>
+      <video controls src="videos/Wednesday and Enid Swap.mp4"></video>
+
+      <br><br><br>
+      <p>The Help</p>
+      <video controls src="videos/The Help.mp4"></video>
+
+      <br><br><br>
+      <p>Cruella</p>
+      <video controls src="videos/Cruella.mp4"></video>
+
+      <br><br><br>
+      <p>Anne with an E</p>
+      <video controls src="videos/Anne with an E.mp4"></video>
+
+      <br><br><br>
+      <p>Dead Poets Society</p>
+      <video controls src="videos/Dead Poets Society.mp4"></video>
+
+    </section>
+  </div>
 </body>
 </html>
